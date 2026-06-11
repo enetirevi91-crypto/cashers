@@ -31,7 +31,7 @@ function App() {
           <div className="hero-coins" style={{ marginBottom: '-35vw', position: 'relative', zIndex: 10 }}>
             USDT <span className="dot">•</span> BTC <span className="dot">•</span> ETH
           </div>
-          <div className="hero-image" style={{ marginTop: '-45vw', marginBottom: '240vw' }}>
+          <div className="hero-image" style={{ marginTop: '-45vw', marginBottom: '-24vw' }}>
             <img src="/ChatGPT Image 11 июн. 2026 г., 11_12_19.png" alt="Coins" className="shark-img" draggable={false} />
           </div>
           <a href={TG_URL} target="_blank" rel="noopener noreferrer" className="cta-button">
