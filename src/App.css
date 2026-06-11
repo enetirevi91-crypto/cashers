@@ -252,11 +252,4 @@
   .hero-title { font-size: 28px; }
   .hero-subtitle { font-size: 24px; }
   .cta-button { padding: 14px 18px; font-size: 16px; }
-  .hero-coins {
-    margin-bottom: -160px !important;
-  }
-  .hero-image {
-    margin-top: -150px !important;
-    margin-bottom: -60px !important;
-  }
 }
