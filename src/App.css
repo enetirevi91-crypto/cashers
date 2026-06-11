@@ -140,7 +140,8 @@
 }
 
 .hero-image {
-  margin-bottom: 16px;
+  margin-top: -10%;
+  margin-bottom: 0;
 }
 
 .shark-img {
@@ -249,7 +250,6 @@
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 28px; }
-  .hero-subtitle { font-size: 24px; }
+  .hero-title { font-size: 26px; }
+  .hero-subtitle { font-size: 22px; }
   .cta-button { padding: 14px 18px; font-size: 16px; }
-}

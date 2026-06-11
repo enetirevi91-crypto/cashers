@@ -28,10 +28,10 @@ function App() {
         <section className="hero">
           <h1 className="hero-title">Обмен криптовалют</h1>
           <h2 className="hero-subtitle">по лучшему курсу</h2>
-          <div className="hero-coins" style={{ marginBottom: '-140px', position: 'relative', zIndex: 10 }}>
+          <div className="hero-coins" style={{ marginBottom: '-190px', position: 'relative', zIndex: 10 }}>
             USDT <span className="dot">•</span> BTC <span className="dot">•</span> ETH
           </div>
-          <div className="hero-image" style={{ marginTop: '-190px', marginBottom: '-240px' }}>
+          <div className="hero-image">
             <img src="/ChatGPT Image 11 июн. 2026 г., 11_12_19.png" alt="Coins" className="shark-img" draggable={false} />
           </div>
           <a href={TG_URL} target="_blank" rel="noopener noreferrer" className="cta-button">
