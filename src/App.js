@@ -11,7 +11,6 @@ function App() {
       <div className="bg-vignette" />
 
       <div className="container">
-
         <header className="header">
           <div className="header-left">
             <div className="logo-box">
@@ -19,10 +18,7 @@ function App() {
             </div>
 
             <div className="header-text">
-              <div className="header-title">
-                CASHERS
-              </div>
-
+              <div className="header-title">CASHERS</div>
               <div className="header-sub">
                 Обмен криптовалют
               </div>
@@ -31,7 +27,6 @@ function App() {
 
           <div className="header-badge">
             <ShieldIcon className="icon-teal" />
-
             <div className="badge-text">
               Сделки только
               <br />
@@ -40,9 +35,7 @@ function App() {
           </div>
         </header>
 
-        {/* HERO */}
         <section className="hero">
-
           <h1 className="hero-title">
             Обмен криптовалют
           </h1>
@@ -81,19 +74,12 @@ function App() {
             Безопасно <span className="dot">•</span>
             Без комиссий
           </div>
-
         </section>
 
-        {/* FEATURES */}
         <section className="features">
-
           <div className="feature">
             <BoltIcon className="icon-feature" />
-
-            <div className="feature-title">
-              Быстро
-            </div>
-
+            <div className="feature-title">Быстро</div>
             <div className="feature-desc">
               Обмен за 10 минут
             </div>
@@ -101,11 +87,9 @@ function App() {
 
           <div className="feature">
             <ShieldCheckIcon className="icon-feature" />
-
             <div className="feature-title">
               Безопасно
             </div>
-
             <div className="feature-desc">
               Только личная встреча
             </div>
@@ -113,19 +97,15 @@ function App() {
 
           <div className="feature">
             <PercentIcon className="icon-feature" />
-
             <div className="feature-title">
               Выгодно
             </div>
-
             <div className="feature-desc">
               Лучшие курсы в городе
             </div>
           </div>
-
         </section>
 
-        {/* FOOTER */}
         <footer className="footer">
           <a
             href={TG_URL}
@@ -138,13 +118,12 @@ function App() {
           </a>
 
           <div className="footer-hours">
-            Работаем ежедневно с{' '}
-            <span className="teal">09:00</span>
-            {' '}до{' '}
-            <span className="teal">20:00</span>
+            Работаем ежедневно с
+            <span className="teal"> 09:00 </span>
+            до
+            <span className="teal"> 20:00</span>
           </div>
         </footer>
-
       </div>
     </div>
   );
@@ -152,13 +131,7 @@ function App() {
 
 function ShieldIcon({ className }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className={className}
-    >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}>
       <path d="M12 3l8 3v6c0 4.5-3.5 8.5-8 9-4.5-.5-8-4.5-8-9V6l8-3z" />
     </svg>
   );
@@ -166,13 +139,7 @@ function ShieldIcon({ className }) {
 
 function ShieldCheckIcon({ className }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className={className}
-    >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}>
       <path d="M12 3l8 3v6c0 4.5-3.5 8.5-8 9-4.5-.5-8-4.5-8-9V6l8-3z" />
       <path d="M9 12l2 2 4-4" />
     </svg>
@@ -181,13 +148,7 @@ function ShieldCheckIcon({ className }) {
 
 function BoltIcon({ className }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className={className}
-    >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}>
       <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
     </svg>
   );
@@ -195,13 +156,7 @@ function BoltIcon({ className }) {
 
 function PercentIcon({ className }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className={className}
-    >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={className}>
       <line x1="19" y1="5" x2="5" y2="19" />
       <circle cx="7" cy="7" r="2.5" />
       <circle cx="17" cy="17" r="2.5" />
@@ -211,11 +166,7 @@ function PercentIcon({ className }) {
 
 function TelegramIcon({ className }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={className}
-    >
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
       <path d="M21.5 3.5L2.5 11l5.5 2 2 6 3-3.5 5 4 3.5-16zM10 14l8-7-10 6.5z" />
     </svg>
   );
