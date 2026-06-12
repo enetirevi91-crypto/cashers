@@ -183,8 +183,8 @@ body,
 /* SHARK */
 
 .hero-image {
-  margin-top: -16%;
-  margin-bottom: -16%;
+  margin-top: -43%;
+  margin-bottom: -55%;
   position: relative;
   z-index: 1;
 }
@@ -336,8 +336,8 @@ body,
   }
 
   .hero-image {
-    margin-top: -10%;
-    margin-bottom: -18%;
+    margin-top: -43%;
+    margin-bottom: -55%;
   }
 
   .shark-img {
