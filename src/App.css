@@ -249,8 +249,3 @@
   color: #5eead4;
 }
 
-@media (max-width: 480px) {
-  .cta-button {
-    margin-top: -20px;
-  }
-}
