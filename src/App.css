@@ -1,5 +1,4 @@
-
-}.page {
+.page {
   min-height: 100vh;
   background: #02080a;
   color: #fff;
@@ -251,14 +250,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 26px; }
-  .hero-subtitle { font-size: 22px; }
-  .cta-button { padding: 14px 18px; font-size: 16px; }
-  .hero-image {
-    margin-top: -5%;
-    margin-bottom: 10px;
-  }
-  .hero-coins {
-    margin-bottom: 10px !important;
+  .cta-button {
+    margin-top: -20px;
   }
 }
