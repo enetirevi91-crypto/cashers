@@ -1,13 +1,363 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
+.page {
+  min-height: 100vh;
   background: #02080a;
   color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ===== BACKGROUND ===== */
+
+.bg-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 90% 70% at 50% 25%,
+      #0a3a32 0%,
+      #051a18 35%,
+      #02080a 70%
+    );
+  pointer-events: none;
+}
+
+.bg-nebula {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(45,212,191,0.25), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(20,184,166,0.20), transparent 40%),
+    radial-gradient(circle at 50% 60%, rgba(94,234,212,0.18), transparent 45%),
+    radial-gradient(circle at 15% 80%, rgba(13,148,136,0.22), transparent 40%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.bg-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 100% 80% at 50% 50%,
+      transparent 50%,
+      rgba(0,0,0,0.6) 100%
+    );
+  pointer-events: none;
+}
+
+/* ===== CONTAINER ===== */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 30px 40px;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  border: 1px solid rgba(45,212,191,0.4);
+  background: #0a1f1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 24px rgba(45,212,191,0.35);
+}
+
+.logo-letter {
+  font-size: 42px;
+  font-weight: 900;
+  color: #5eead4;
+  text-shadow: 0 0 14px rgba(94,234,212,0.8);
+}
+
+.header-title {
+  font-size: clamp(28px, 3vw, 52px);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.header-sub {
+  font-size: clamp(12px, 1.2vw, 18px);
+  color: rgba(204,251,241,0.75);
+}
+
+.header-badge {
+  border-radius: 22px;
+  border: 1px solid rgba(45,212,191,0.4);
+  background: rgba(10,31,26,0.6);
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 0 18px rgba(45,212,191,0.25);
+}
+
+.icon-teal {
+  width: 22px;
+  height: 22px;
+  color: #5eead4;
+}
+
+.badge-text {
+  font-size: clamp(12px, 1vw, 18px);
+  line-height: 1.4;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: clamp(48px, 6vw, 90px);
+  font-weight: 800;
+  line-height: 1.03;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: clamp(42px, 5vw, 80px);
+  font-weight: 800;
+  color: #5eead4;
+  text-shadow: 0 0 18px rgba(45,212,191,0.55);
+  line-height: 1.05;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.hero-coins {
+  color: rgba(204,251,241,0.85);
+  font-size: clamp(16px, 2vw, 28px);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.dot {
+  color: #2dd4bf;
+}
+
+/* ===== SHARK ===== */
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  /* вот эти значения отвечают за "0.5 см" */
+  margin-top: -12px;
+  margin-bottom: -24px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.shark-img {
+  width: min(100%, 920px);
+  height: auto;
+  display: block;
+  user-select: none;
+}
+
+/* ===== CTA ===== */
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  width: min(100%, 860px);
+
+  border-radius: 22px;
+  border: 2px solid #5eead4;
+  background: rgba(10,31,26,0.6);
+
+  padding: 24px 30px;
+
+  font-size: clamp(20px, 2vw, 34px);
+  font-weight: 600;
+
+  text-decoration: none;
+  color: #fff;
+
+  box-shadow:
+    0 0 30px rgba(45,212,191,0.55),
+    inset 0 0 20px rgba(45,212,191,0.15);
+
+  transition: transform .2s;
+  margin-bottom: 18px;
+}
+
+.cta-button:hover {
+  transform: scale(1.02);
+}
+
+.icon-teal-lg {
+  width: 30px;
+  height: 30px;
+  color: #5eead4;
+}
+
+.hero-tags {
+  font-size: clamp(14px, 1.5vw, 22px);
+  color: rgba(204,251,241,0.85);
+  margin-bottom: 26px;
+}
+
+/* ===== FEATURES ===== */
+
+.features {
+  border-radius: 28px;
+  border: 1px solid rgba(45,212,191,0.25);
+  background: rgba(7,24,20,0.45);
+
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.feature {
+  text-align: center;
+  padding: 10px;
+}
+
+.icon-feature {
+  width: 48px;
+  height: 48px;
+  color: #5eead4;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: clamp(18px, 2vw, 34px);
+  font-weight: 700;
+}
+
+.feature-desc {
+  font-size: clamp(12px, 1vw, 18px);
+  color: rgba(204,251,241,0.7);
+  margin-top: 6px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  text-align: center;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(204,251,241,1);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: clamp(16px, 1.4vw, 24px);
+}
+
+.icon-teal-sm {
+  width: 24px;
+  height: 24px;
+  color: #5eead4;
+}
+
+.footer-hours {
+  font-size: clamp(14px, 1.3vw, 20px);
+  color: rgba(204,251,241,0.7);
+}
+
+.teal {
+  color: #5eead4;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 480px;
+    padding: 16px 20px 30px;
+  }
+
+  .header {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .logo-box {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 30px;
+  }
+
+  .hero-coins {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .hero-image {
+    margin-top: -8px;
+    margin-bottom: -12px;
+  }
+
+  .shark-img {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 18px 22px;
+    font-size: 18px;
+  }
+
+  .features {
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .feature-title {
+    font-size: 16px;
+  }
+
+  .feature-desc {
+    font-size: 11px;
+  }
 }

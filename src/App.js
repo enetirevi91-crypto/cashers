@@ -11,6 +11,7 @@ function App() {
       <div className="bg-vignette" />
 
       <div className="container">
+
         <header className="header">
           <div className="header-left">
             <div className="logo-box">
@@ -18,7 +19,10 @@ function App() {
             </div>
 
             <div className="header-text">
-              <div className="header-title">CASHERS</div>
+              <div className="header-title">
+                CASHERS
+              </div>
+
               <div className="header-sub">
                 Обмен криптовалют
               </div>
@@ -27,6 +31,7 @@ function App() {
 
           <div className="header-badge">
             <ShieldIcon className="icon-teal" />
+
             <div className="badge-text">
               Сделки только
               <br />
@@ -38,56 +43,57 @@ function App() {
         {/* HERO */}
         <section className="hero">
 
-          <div className="hero-content">
-            <h1 className="hero-title">
-              Обмен криптовалют
-            </h1>
+          <h1 className="hero-title">
+            Обмен криптовалют
+          </h1>
 
-            <h2 className="hero-subtitle">
-              по лучшему курсу
-            </h2>
+          <h2 className="hero-subtitle">
+            по лучшему курсу
+          </h2>
 
-            <div className="hero-coins">
-              USDT <span className="dot">•</span>
-              BTC <span className="dot">•</span>
-              ETH
-            </div>
-
-            <a
-              href={TG_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button"
-            >
-              <TelegramIcon className="icon-teal-lg" />
-              <span>Получить курс в Telegram</span>
-            </a>
-
-            <div className="hero-tags">
-              Быстро <span className="dot">•</span>
-              Безопасно <span className="dot">•</span>
-              Без комиссий
-            </div>
+          <div className="hero-coins">
+            USDT <span className="dot">•</span>
+            BTC <span className="dot">•</span>
+            ETH
           </div>
 
           <div className="hero-image">
             <img
               src="/ChatGPT Image 11 июн. 2026 г., 11_12_19.png"
-              alt="Cashers"
+              alt="Coins"
               className="shark-img"
               draggable={false}
             />
+          </div>
+
+          <a
+            href={TG_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button"
+          >
+            <TelegramIcon className="icon-teal-lg" />
+            <span>Получить курс в Telegram</span>
+          </a>
+
+          <div className="hero-tags">
+            Быстро <span className="dot">•</span>
+            Безопасно <span className="dot">•</span>
+            Без комиссий
           </div>
 
         </section>
 
         {/* FEATURES */}
         <section className="features">
+
           <div className="feature">
             <BoltIcon className="icon-feature" />
+
             <div className="feature-title">
               Быстро
             </div>
+
             <div className="feature-desc">
               Обмен за 10 минут
             </div>
@@ -95,9 +101,11 @@ function App() {
 
           <div className="feature">
             <ShieldCheckIcon className="icon-feature" />
+
             <div className="feature-title">
               Безопасно
             </div>
+
             <div className="feature-desc">
               Только личная встреча
             </div>
@@ -105,13 +113,16 @@ function App() {
 
           <div className="feature">
             <PercentIcon className="icon-feature" />
+
             <div className="feature-title">
               Выгодно
             </div>
+
             <div className="feature-desc">
               Лучшие курсы в городе
             </div>
           </div>
+
         </section>
 
         {/* FOOTER */}
@@ -133,6 +144,7 @@ function App() {
             <span className="teal">20:00</span>
           </div>
         </footer>
+
       </div>
     </div>
   );
