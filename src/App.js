@@ -114,7 +114,7 @@ function App() {
             className="footer-link"
           >
             <TelegramIcon className="icon-teal-sm" />
-            <span>@cashers_manager</span>
+            <span>@cashers_exchange_manager</span>
           </a>
 
           <div className="footer-hours">
