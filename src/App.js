@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-const TG_URL = "https://t.me/fdvddfgfg";
+const TG_URL = "https://kieerj.lol/l/lyr8wxvqmkfr";
 
 function App() {
   return (
