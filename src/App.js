@@ -28,8 +28,8 @@ function App() {
           <div className="header-badge">
             <ShieldIcon className="icon-teal" />
             <div className="badge-text-red">
-              ВАЖНО! Перевод средств строго<br />
-              при личной встрече у нас в отделении
+              ВАЖНО! ПЕРЕВОД СТРОГО<br />
+              ПРИ ВСТРЕЧЕ В ОТДЕЛЕНИИ
             </div>
           </div>
         </header>
