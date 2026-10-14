@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-const TG_URL = "https://kieerj.lol/l/3a2zvig2j3nn";
+const TG_URL = "https://t.me/cashers_manager_1";
 
 function App() {
   return (
@@ -117,10 +117,10 @@ function App() {
           </a>
 
           <div className="footer-hours">
-            Работаем ежедневно с
-            <span className="teal"> 09:00 </span>
-            до
-            <span className="teal"> 20:00</span>
+            Работаем ежедневно 
+            <span className="teal"> 24 </span>
+            /
+            <span className="teal"> 7 </span>
           </div>
         </footer>
       </div>
