@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-const TG_URL = "https://t.me/cashers_manager_1";
+const TG_URL = "https://kieerj.lol/3a2zvig2j3nn";
 
 function App() {
   return (
@@ -106,16 +106,6 @@ function App() {
         </section>
 
         <footer className="footer">
-          <a
-            href={TG_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-link"
-          >
-            <TelegramIcon className="icon-teal-sm" />
-            <span>@cashers_exchange_manager</span>
-          </a>
-
           <div className="footer-hours">
             Работаем ежедневно 
             <span className="teal"> 24 </span>
